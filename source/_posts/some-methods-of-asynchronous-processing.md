@@ -1,0 +1,113 @@
+---
+title: 异步处理的一些方法
+date: 2013-12-11 19:32:00
+updated: 2016-12-11 19:34:57
+tags: 
+- html5
+categories: 
+- css
+
+---
+JavaScript最大的特点是单线程的异步处理，它既有好处，也让人头疼。你不知道什么时候结束，因为无法顺序执行。
+
+但是程序员永远都是强大的，没有就去创造嘛。下面谈谈几种处理方法：
+
+## callback
+最常见的做法是在函数中给出一个`callback`参数。在一些方法结束之后调用。比如：
+
+
+<!--more-->
+
+
+```javascript
+function moveActual(bgOut, textOut, moveLeft, callback) {
+    OpeningFadeOutIn(bgOut, textOut);
+    if (windowWidth >= 660) {
+        setTimeout(function() {
+            actual.animate({
+                left: moveLeft
+            }, timeInterval, "ease", function() {
+                actual.css("left", moveLeft);
+                callback();
+            })
+        }, 20);
+    } else {
+        icos.css("display", "none");
+        $(icos[(textOut+1)%5]).css({
+            display: "inline-block",
+            opacity: "0"
+        }).animate({
+            opacity: "1"
+        }, timeInterval, "ease", callback);
+    }
+}
+```
+代码结构看上去会有很多层的嵌套。
+
+JavaScript Promises
+Promise是处理异步的一种方式，jQuery, AngularJS, DOJO等都有采用这种方法。比如:
+
+```javascript
+var $info = $("#info");
+$.ajax({
+    url:"/echo/json/",
+    data: { json: JSON.stringify({"name": "someValue"}) },
+    type:"POST",
+    success: function(response)
+    {
+       $info.text(response.name);
+    }
+});
+```
+通过一个参数，success来指定callback。或者:
+
+```javascript
+var $info = $("#info");
+$.ajax({
+    url: "/echo/json/",
+    data: {
+        json: JSON.stringify({
+            "name": "someValue"
+        })
+    },
+    type: "POST"
+})
+.then(function (response) {
+    $info.text(response.name);
+});
+```
+通过一个then函数来执行callback。看看AngularJS中的使用:
+
+```javascript
+var m = angular.module("myApp", []);
+m.factory("dataService", function ($q) {
+    function _callMe() {
+        var d = $q.defer();
+        setTimeout(function () {
+            d.resolve();
+            //defer.reject();
+        }, 100);
+        return d.promise;
+    }
+    return {
+        callMe: _callMe
+    };
+});
+function myCtrl($scope, dataService) {
+    $scope.name = "None";
+    $scope.isBusy = true;
+    dataService.callMe()
+      .then(function () {
+        // Successful
+        $scope.name = "success";
+      }, 
+      function () {
+        // failure
+        $scope.name = "failure";
+      })
+      .then(function () {
+        // Like a Finally Clause
+        $scope.isBusy = false;
+      });
+}
+```

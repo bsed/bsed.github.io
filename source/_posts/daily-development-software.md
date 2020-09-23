@@ -1,0 +1,45 @@
+---
+title: 日常开发软件
+date: 2017-06-11 10:21:00
+updated: 2019-02-20 13:33:19
+tags: 
+- golang
+- plugin
+categories: 
+- go
+
+---
+Visual Studio Code: 从Textmate到Atom最终还是停留在VSC上，编辑器中已无限接近IDE的功能。非常棒的调试，跳转和代码提示。对比Atom更快速启动。我的主要开发语言为C/C++、python以及shell开发，同时也对golang和rust有兴趣。所以安装了以下extension:
+
+<!--more-->
+ - beautify : 代码格式化
+ - vscode-docker : 为了Dockerfile
+ - code-settings-sync : 同步settings至github
+ - Bookmarks : 书签功能
+ - head-file-guard : 方便添加头文件，可以针对不同文件定制格式。
+ - vscode-gist : 快速添加编辑内容至gist
+ - fileheadercomment : 为c/c++ 头文件快速添加 ifndef 定义
+ - githistory : show git log
+ - python : python开发支持
+ - Go : golang开发支持
+ - vscode.cpptools : c/c++开发支持
+ - RustyCode : Rust开发支持
+ - vscode-nginx : nginx.conf编辑支持
+ - cmake : cmake编辑支持，附带自动提示功能
+ - cmake-tools : cmake支持，可以设置快捷键编译项目
+ - vscode-proto3 : Protobuf3 支持
+
+其他常用软件：
+ - CLion : Jetbrains出品，c/c++开发首选
+ - DevDocs: https://github.com/Thibaut/devdocs devdocs的离线版本
+ - Docker for mac : 在mac os上运行docker
+ - Android Studio : 偶尔也写点android下小程序
+ - Hex Fiend : 2进制编辑，支持搜索功能
+ - Postman : API测试
+ - Sequel Pro : mysql客户端, 比mysql workbench要稳定很多
+ - SourceTree : 备用git客户端，用的更多的还是命令行
+ - PacketSender : socket调试测试好工具
+ - Eclipse : Java老本行开发，何况我们要用AWS
+ - SQLiteStudio: sqlite客户端
+ - kdiff3 : merge工作，解决代码冲突
+ - DBeaver : 除了各种关系数据库还支持各种nosql，我用它管理Cassandra和redis

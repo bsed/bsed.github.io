@@ -1,0 +1,421 @@
+---
+title: 使用对象字面量组织代码[译] 
+date: 2013-10-06 22:32:00
+updated: 2015-10-06 23:01:13
+tags: 
+- algorithms
+categories: 
+- algorithms
+
+---
+原文：[Using Objects to Organize Your Code](http://rmurphey.com/blog/2009/10/15/using-objects-to-organize-your-code/)
+
+本文是[JSMag](http://jsmag.com/) 2009年3月刊的一篇文章的改进版。
+
+当你写过基于jQuery的代码应用片段后，开始着手开发交互更加复杂的应用时，你会发现代码很快变得杂乱并且难于调试。本文将展示如何使用**对象字面量模式**，依据功能行为来开发更加复杂的交互。
+
+在过去的几年里，JavaScript库让了初级开发者可以快速在他们的站点做出精细的交互。一些库，比如jQuery，拥有非常简单的语法，让零经验的开发者也能够快速的做出花哨的页面。这些花哨的特效，其中不乏精细之作，大多数实现只要在Google上花些时间就能找到。复制粘贴，使用一个插件再加上一些自定义代码，组成的页面看起来就很不错，然后就可以在简历上将jQuery加入技能之列。
+
+但是，需求总在不断改变。之前实现的代码现在需要在三个元素或者是个元素上应用；之前的代码需要在另外一个仅有一些轻微不同（比如ID不同）的应用上重用……我们已经看到那些可以复制粘贴实现花哨功能的代码片段让jQuery（以及其他JavaScript库）看起来十分易用。但这些代码片段之外（这些代码片段仅仅是代码片段，对吧？），你还需要去设计组织你的代码当你需要的不仅仅是引用一个插件或者做一些show()/hide()。
+
+
+<!--more-->
+
+
+## 对象字面量模式
+
+对象字面量模式可以根据功能组成来组织代码。同时，这个模式可以保证代码不会「污染全局命名空间」，不污染全局命名空间被认为是适用于所有项目，特别在大型项目中的一个最佳实践。这个模式强迫你在着手编写代码之前思考代码将做什么以及怎么做。对象字面量模式可以封装所有相关的行为，如下代码所示：
+
+     var myObjectLiteral = {
+        myBehavior1 : function() {
+            /* do something */
+        },
+    
+        myBehavior2 : function() {
+            /* do something else */
+        }
+    };
+
+现在来看一个例子：假设有一个 `#myFeatrue` 列表，当列表的的项被点击时，显示/隐藏项的子元素div中的内容，同时隐藏其他项的内容。实现的jQuery代码片段如下所示：
+
+    $(document).ready(function() {
+        $('#myFeature li')
+            .append('&lt;div/&gt;')
+            .each(function() {
+                $(this).find('div')
+                    .load('foo.php?item=' + $(this).attr('id'));
+            })
+            .click(function() {
+                $(this).find('div').show();
+                $(this).siblings().find('div').hide();
+            });
+    });
+
+非常简单。但是，上面的例子中有几个地方后面可能会被改动。比如说，URL的构成方法、内容的存放位置以及显示隐藏的特效。使用对象字面量的方法，可以上述的需求更加简明，代码如下：
+
+    var myFeature = {
+        config : {
+            wrapper : '#myFeature',
+            container : 'div',
+            urlBase : 'foo.php?item='
+        },
+    
+        init : function(config) {
+            $.extend(myFeature.config, config);
+            $(myFeature.config.wrapper).find('li').
+                each(function() {
+                    myFeature.getContent($(this));
+                }).
+                click(function() {
+                    myFeature.showContent($(this));
+                });
+        },
+    
+        buildUrl : function($li) {
+            return myFeature.config.urlBase + $li.attr('id');
+        },
+    
+        getContent : function($li) {
+            $li.append(myFeature.config.container);
+            var url = myFeature.buildUrl($li);
+            $li.find(myFeature.config.container).load(url);
+        },
+    
+        showContent : function($li) {
+            $li.find('div').show();
+            myFeature.hideContent($li.siblings());
+        },
+    
+        hideContent : function($elements) {
+            $elements.find('div').hide();
+        }
+    };
+    
+    $(document).ready(function() { myFeature.init(); });
+
+在如此简单的例子上，使用如上所述的对象字面量方法反而使代码显得更加冗长。坦白的讲，对象字面量方法并不会让代码更为精简，他所擅长的让你不会因维护代码而头痛。通过使用对象字面量模式，我们将代码分成各个逻辑部分，从而更容易的定位潜在易被修改的代码。同时，我们提供了默认的配置参数并且可以通过init方法（传入config对象）进行修改，让代码更易扩展。最后，这段代码的结构具备一定的自解释能力，可以快速的看出这段代码的用途。当以下需求不断变化改进的时候，此方法的益处将越来越明显。
+
+**注：**推荐一本学习JavaScript对象、属性和方法的书籍：[《Object-Oriented JavaScript: Create scalable, reusable high-quality JavaScript applications and libraries》](http://www.amazon.com/Object-Oriented-JavaScript-high-quality-applications-libraries/dp/1847194141)，由Stoyan Stefanov著。你可能也需要了解JSON（JavaScript Object Notation）的知识。
+
+## 更深入的例子
+
+[译注] [JSFiddle完整例子](http://jsfiddle.net/hNQRS/)
+
+在这个例子中，我们的任务要创建一个由多个区域（Section）组成的UI，每个区域（Section）包含着多个内容。任意点击一个区域将会显示此区域底下的列表；点击列表项将会在显示对应的内容。当一个区域显示的时候，区域中的第一个列表项应该被展示。当页面载入完成时，第一个区域应该被展示。
+
+### 第一步、构建HTML
+结构良好的HTML代码是编写优秀JavaScript代码的重要前提，所以这一步我们开始思考如何构建需求对应的HTML代码。HTML代码应该具备：
+
+ - 当JavaScript被禁用时，亦可正常工作
+ - 提供明了的DOM结构，以便JavaScript调用
+ - 避免多余的ID和class属性（你可能意料不到我们需要的id/class属性是如此之少）
+
+有了上述的准则之后，我们着手编写HTML(JSFiddle预览地址)：
+
+    <h1>This is My Nifty Feature</h1>
+    <div id="myFeature">
+      <ul class="sections">
+        <li>
+          <h2><a href="/section/1">Section 1</a></h2>
+          <ul>
+             <li><h3><a href="/section/1/content/1">Section 1 Title 1</a></h3>
+               <p>The excerpt content for Content Item 1</p> </li>
+             <li> <h3><a href="/section/1/content/2">Section 1 Title 2</a></h3>
+               <p>The excerpt content for Content Item 2</p> </li>
+             <li> <h3><a href="/section/1/content/3">Section 1 Title 3</a></h3>
+                <p>The excerpt content for Content Item 3</p>
+             </li>
+           </ul>
+          </li>
+          <li>
+            <h2><a href="/section/2">Section 2</a></h2>
+            <ul>
+              <li><h3><a href="/section/2/content/1">Section 2 Title 1</a></h3>
+                <p>The excerpt content for Content Item 1</p></li>
+              <li><h3><a href="/section/2/content/2">Section 2 Title 2</a></h3>
+                <p>The excerpt content for Content Item 2</p></li>
+              <li><h3><a href="/section/2/content/3">Section 2 Title 3</a></h3>
+                <p>The excerpt content for Content Item 3</p></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="/section/3">Section 3</a></h2>
+            <ul>
+              <li><h3><a href="/section/3/content/1">Section 3 Title 1</a></h3>
+                <p>The excerpt content for Content Item 1</p></li>
+              <li><h3><a href="/section/3/content/2">Section 3 Title 2</a></h3>
+                <p>The excerpt content for Content Item 2</p></li>
+              <li><h3><a href="/section/3/content/3">Section 3 Title 3</a></h3>
+                <p>The excerpt content for Content Item 3</p> </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+
+上述代码中并没有包含区域导航和列表项导航的代码，导航的代码将由jQuery生成，因为他们仅在jQuery下有效，没有启用JavaScript的用户依然会看到有效的HTML。（如果上述代码中有不明的地方，那么现在可能是一个很好的时机去重温POSH(Plain-old semantic HTML) 以及 渐进增强）。
+
+[译注] JSFiddle完整例子
+
+### 第二步、搭建对象
+创建对象的第一步是在对象中创建「桩」。桩也就是占位符，他们描绘出我们要创建的对象的轮廓。待创建的对象拥有以下方法：
+
+`myFeature.int()`方法：将会在 `$(document).ready()` 的时候运行。此方法是应用的入口。
+`myFeature.buildSectionNav()`方法：将会在`MyFeature.init()`方法中被调用。这个方法包含一个jQuery对象，这个jQuery对象包含所有区域（Section），并使用这些区域生成一级导航。这个方法中将会在生成的一级导航上注册事件，使得一级导航的项被点击时显示对应的区域。
+`myFeature.buildItemNav()`方法：将会被 `myFeature.showSection()`调用。这个方法包含一个jQuery对象，这个jQuery对象引用区域中列表的所有项，并使用这些项来生成二级导航。这个方法会在二级导航上注册事件，当项被点击时显示对应的内容。
+`myFeature.showSection()`方法：在用户点击一级导航项的时候被调用。这个方法根据被点击的项来显示对应的区域。
+`myFeature.showContentItem()`方法：在用户点击二级导航项的时候被调用。这个方法根据被点击的二级导航项来显示对应的内容。
+同时我们在对象里定义了一个属性：`myFeature.config`。这个属性用来保存默认的配置。通关过给`myFeature.init()`方法传`config`来覆盖默认的配置。
+
+    var myFeature = {
+        'config' : { },
+        'init' : function() { },
+        'buildSectionNav' : function() { },
+        'buildItemNav' : function() { },
+        'showSection' : function() { },
+        'showContentItem' : function() { }
+    };
+
+[译注] [JSFiddle完整例子](http://jsfiddle.net/hNQRS/)
+
+### 第三步、对象的实现
+当创建了对象的轮廓之后，就可以开始编码了。首先从建立myFeature.config属性以及myFeature.init()方法入手：
+
+    'config': {
+        // 默认的容器是 #myFeature
+        'container': $('#myFeature')
+    },
+    
+    'init': function (config) {
+        // 自定义配置可以init的config参数配置
+        if (config &amp;&amp; typeof (config) == 'object') {
+            $.extend(myFeature.config, config);
+        }
+    
+        // 创建 或者 缓存dom元素。这些元素在后续代码中使用
+        myFeature.$container = myFeature.config.container;
+    
+        myFeature.$sections = myFeature.$container.
+        // 仅选择直接子元素
+        find('ul.sections &gt; li');
+    
+        myFeature.$section_nav = $('&lt;p/&gt;')
+            .attr('id', 'section_nav')
+            .prependTo(myFeature.$container);
+    
+        myFeature.$item_nav = $('&lt;p/&gt;')
+            .attr('id', 'item_nav')
+            .insertAfter(myFeature.$section_nav);
+    
+        myFeature.$content = $('&lt;p/&gt;')
+            .attr('id', 'content')
+            .insertAfter(myFeature.$item_nav);
+    
+        // 构建一级导航，并且触发第一个列表元素的点击事件
+        myFeature.buildSectionNav(myFeature.$sections);
+        myFeature.$section_nav.find('li:first').click();
+    
+        // 隐藏原始的HTML代码
+        myFeature.$container.find('ul.sections').hide();
+    
+        // 设定属性initialized标识对象已被初始化。本例中没有用到，但这是一个很方便的属性
+        myFeature.initialized = true;
+    }
+
+接着，创建myFeature.buildSetionNav()方法，创建一级导航：
+
+    'buildSectionNav': function ($sections) {
+    
+        // 迭代区域的列表项
+        $sections.each(function () {
+    
+            // 获取当前区域引用
+            var $section = $(this);
+    
+            // 创建一级导航列表项
+            $('&lt;li/&gt;')
+                // 使用h2的文本作为导航项的标题
+                .text($section.find('h2:first').text())
+    
+                // 将此列表项添加到一级导航元素下
+                .appendTo(myFeature.$section_nav)
+    
+                // 使用data属性在新创建的列表项上存储一个到原始区域的引用
+                .data('section', $section)
+    
+                // 为此列表项创建点击回调函数
+                .click(myFeature.showSection);
+        });
+    }
+
+创建myFeature.buildItemNav()方法，创建二级导航：
+
+    'buildItemNav': function() {
+        // 迭代区域内容项
+        $items.each(function () {
+            // 当前内容项的引用
+            var $item = $(this);
+    
+            // 创建一个列表项元素
+            $('&lt;li&gt;')
+                // 使用第一个h3元素的文本作为列表项的标题
+                .text($item.find('h3:first').text())
+    
+                // 添加列表想到二级导航上
+                .appendTo(myFeature.$item_nav)
+    
+                // 使用data()方法在列表项上存储一个到原始内容项的引用
+                .data('item', $item)
+    
+                // 绑定点击事件
+                .click(myFeature.showContentItem);
+        });
+    }
+
+最后，实现显示区域和内容的方法，myFeature.showSection()和showContentItem()：
+
+    'showSection': function () {
+        // 当前被点击的列表项
+        var $li = $(this);
+    
+        // 清理导航以及内容区域
+        myFeature.$item_nav.empty();
+        myFeature.$content.empty();
+    
+        // 使用data()获取data-section上存储的区域的引用
+        var $section = $li.data('section');
+    
+        // 标记列表项为当前项，将列表中标注为当前项的元素移除标记
+        $li.addClass('current')
+            .siblings().removeClass('current');
+    
+        // 寻找与此区域有关的列表项
+        var $items = $section.find('ul li');
+    
+        // 构建此区域的二级导航
+        myFeature.buildItemNav($items);
+    
+        // 触发第一个元素的'click'事件
+        myFeature.$item_nav.find('li:first').click();
+    },
+    
+    'showContentItem': function () {
+        var $li = $(this);
+    
+        // 从此列表项的相领元素中移除'current'标记，并给当前元素加上'current'标记
+        $li.addClass('current')
+            .siblings().removeClass('current');
+    
+        // 使用data()方法获取data-item属性中存储的内容项的引用
+        var $item = $li.data('item');
+    
+        // 使用内容项的内容填充内容区域
+        myFeature.$content.html($item.html());
+    }
+
+对象已创建完成，剩下所需要做的就是在document ready的时候调用`myFeature.init`方法：
+
+    $(document).ready(myFeature.init);
+
+[译注] [JSFiddle完整例子](http://jsfiddle.net/hNQRS/)
+
+### 第四步、应对更改的需求
+
+项目总在最后关头做出一些需求上的调整，对吧？这就是对象字面量模式发挥的时候，这个模式可以使你快速不加班地实现更改。在上面的例子中，假若我们要通过AJAX获取数据而非HTML中获取，将会如何？假设后端已经就绪，可以接收前端的请求，代码将调整如下：
+
+    var myFeature = {
+        'config' : {
+            'container' : $('#myFeature'),
+            // 指定获取内容的函数
+            'getItemURL' : function($item) {
+                return $item.find('a:first').attr('href');
+            }
+        },
+        'init' : function(config) {
+            // stays the same
+        },
+        'buildSectionNav' : function($sections) {
+            // stays the same
+        },
+        'buildItemNav' : function($items) {
+            // stays the same
+        },
+        'showSection' : function() {
+            // stays the same
+        },
+        'showContentItem' : function() {
+            var $li = $(this);
+            $li.addClass('current').
+                siblings().removeClass('current');
+            var $item = $li.data('item');
+            var url = myFeature.config.getItemURL($item);
+            // 从url中load，而非$item.html()
+            myFeature.$content.load(url);
+        }
+    };
+
+需要应用更具灵活性？可以通过配置默认参数的形式来实现。比如，通过`myFeature.config`配置如何寻找并生成二级导航列表项的标题：
+
+    var myFeature = {
+        'config': {
+            'container': $('#myFeature'),
+            // 指定一级导航项标题的文本出处
+            'itemNavSelector': 'h3',
+            // 指定处理导航标题的函数
+            'itemNavProcessor': function ($selection) {
+                return 'Preview of ' + $selection.eq(0).text();
+            }
+        },
+        'init': function (config) {
+            // stays the same
+        },
+        'buildSectionNav': function ($sections) {
+            // stays the same
+        },
+        'buildItemNav': function ($items) {
+            $items.each(function () {
+                var $item = $(this);
+                // 使用config中指定的属性生成导航标题
+                var myText = myFeature.config.itemNavProcessor(
+                $item.find(myFeature.config.itemNavSelector));
+                $('&lt;li/&gt;')
+                // 设置标题
+                .text(myText)
+                    .appendTo(myFeature.$item_nav)
+                    .data('item', $item)
+                    .click(myFeature.showContentItem);
+            });
+        },
+        'showSection': function () {
+            // stays the same
+        },
+        'showContentItem': function () {
+            // stays the same
+        }
+    };
+
+在myFeature.config中配置的默认参数，都可以在调用`myFeature.init()`时将其改写：
+
+    $(document).ready(function() {
+        myFeature.init({ 'itemNavSelector' : 'h2' });
+    });
+
+在本文所讨论的例子之外，另外一个值得考虑并且可以通过对象字面量模式实现的功能：使用jQuery history 插件实现「返回键」可以返回之前切换过的tab。这个练习留给读者去实现。
+
+## 总结
+
+如果你一步步跟着例子做下来，那么应该对对象字面量模式有了一个基本的了解，知晓这个模式如何帮助开发更加复杂的应用。例子中的部分代码可以作为复杂应用的基础。
+
+我鼓励你在下次发现自己写稍微复杂的代码时试试对象字面量模式，她强迫你对组成一个复杂应用的元素和行为进行思考。当你掌握次模式时，她将为你扩展和重用代码提供了坚实的基础。
+
+## 更多
+
+ - [More on the jQuery data() method](http://docs.jquery.com/Data)
+ - [More praise for the object literal
+   pattern](http://www.wait-till-i.com/2006/02/16/show-love-to-the-object-literal/)
+ - [The jQuery History
+   plugin](http://www.mikage.to/jquery/jquery_history.html)
+ - [An interesting application of the object literal pattern for
+   architecting code for multiple page
+   types](http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/)
+ - [My presentation at the 2009 jQuery Conference about code
+   organization](http://www.slideshare.net/rmurphey/using-objects-to-organize-your-jquery-code)

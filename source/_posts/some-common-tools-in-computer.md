@@ -1,0 +1,61 @@
+---
+title: 电脑中的一些常用工具
+date: 2013-11-24 09:04:00
+updated: 2015-11-07 09:06:02
+tags: 
+- javascript
+- ecmascript6
+categories: 
+- js
+
+---
+电脑上的工具：
+
+pchunter - 系统分析神器
+virtualbox - 轻量级虚拟机
+xmanager enterprise - windows下管理linux的工具，个人感觉比securityCRT要好用
+conEmu - windows下cmd增强工具，还有一个cmder可以在windows下支持linux命令
+babun - 在windows下使用linux命令的工具，可以和conEmu整合
+cherrytree - 跨平台富文本笔记软件
+hfs - 小巧的webserver
+vlc - 开源强大的跨平台支持所有格式的播放器
+foxmail - 邮件客户端
+teamviewer - 远程协助
+FeedDemon - RSS客户端 知道RSS的人都知道
+UltraISO - 刻录光盘制作启动盘神器
+YUMI - linux/windows多启动制作工具
+comodo - 老牌hips防火墙，裸奔就靠它了
+turecrypt - 文件加密工具
+Internet Download Manager (IDM) - 下载神器
+Free Download Manager (FDM)- 比IDM还神的下载神器
+Notepad++/UltraEdit/VS code/sublime text - 文本编辑神器
+Haroopad - Markdown编辑器，写博专用
+Edraw Max Pro - 画网络拓扑图，流程图
+
+
+<!--more-->
+
+
+在线工具：
+查看ip地址（可以在linux下）
+http://ip.cn
+http://www.ifconfig.me
+
+脚本和命令集锦
+http://www.commandlinefu.com/commands/browse
+
+测试服务器速度
+http://alibench.com
+http://ce.cloud.360.cn
+http://www.17ce.com
+http://www.speedtest.net
+
+在线系统管理视频教程
+http://sysadmincasts.com/
+
+在线格式工厂
+http://www.online-convert.com/
+
+在线下载各大网站视频
+http://www.flvcd.com/
+

@@ -1,0 +1,54 @@
+---
+title: 分库分表环境下导入部分数据库文件
+date: 2018-01-12 13:43:00
+updated: 2018-01-12 13:58:40
+tags: 
+- ubuntu
+- eDP-1
+categories: 
+- linux
+
+---
+本文学习如何用 mysql 批量导入文件夹下的所有sql文件
+首先新建一个**wlb_bdcguangdong.sql**，然后在wlb_bdcguangdong.sql文件里面这么写：
+```bash
+source E:/sql/1.sql;
+source E:/sql/2.sql;
+source E:/sql/3.sql;
+```
+编辑好后，再 `source wlb_bdcguangdong.sql` ,mysql 就会给你自动的批量导入了。
+对于如何批量写入sql文件的路径，你可以用cmd命令，比如
+
+```bash
+dir E:\sql\ /b/s > wlb_bdcguangdong.sql
+```
+然后再在每行开头加上source就行鸟,(笔者使用的列编辑功能，注意使用像dbever、Navicat工具需要将`\`修改为 `/`)
+
+真实效果如图：
+![mysql_import.png][1]
+
+笔者的分库分表备份脚本：
+```bash
+
+#!/bin/sh
+USER=root
+PASSWD=root
+SOCKET=/tmp/mysql.sock
+LOGIN="mysql -u$USER -p$PASSWD -S $SOCKET"
+DATABASE=$($LOGIN -e "show databases;"|egrep -v "*chema|mysql"|sed '1d')
+DUMP="mysqldump -u$USER -p$PASSWD -S $SOCKET"
+for database in $DATABASE
+do
+  TABLE=$($LOGIN -e "use $database;show tables;"|sed '1d')
+  for table in $TABLE
+    do
+    [ -d /root/backup/$database ] || mkdir -p /root/backup/$database
+#   [ ! -d /root/backup/$database ] && mkdir -p /root/backup/$database
+    #$DUMP $database $table |gzip >/root/backup/$database/${database}_${table}_$(date +%F).sql.gz
+    $DUMP $database $table >/root/backup/$database/${database}_${table}_$(date +%F).sql
+    done
+done
+
+```
+
+  [1]: https://imgs.gnux.cn/usr/uploads/2018/01/825688135.png

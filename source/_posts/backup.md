@@ -1,0 +1,254 @@
+---
+title: 网址备份
+date: 2015-05-05 10:49:00
+updated: 2015-05-10 10:50:19
+tags: 
+- ctags
+categories: 
+- linux
+
+---
+一、网站类
+1、假期在家如何查找论文资料？只需登录中国图书馆http://t.cn/hYmDq （需注册），即可免费下载各种期刊和学位论文
+2、新东方多媒体学习库http://t.cn/RvRWmbk（需用身份证号注册），里面几乎涵盖所有新东方网课
+3、全球免费开放的电子图书馆http://t.cn/h4hJUf
+常用二十六大学术搜素引擎http://blog.sina.com.cn/s/blog_135d35ae70102uxl4.html#bsh-24-452880504
+4、给大家推荐个神网站，只要是外文书籍基本上都可以搜到并下载，并且电子书质量极高http://t.cn/hYvbf
+5、【小语种入门】法语入门 http://t.cn/GvrXV；意语入门http://t.cn/hbOoz4；西语入门http://t.cn/h4IRPu；葡语入门 http://t.cn/arWpIJ；德语入门 http://t.cn/hRn3j；俄语入门http://t.cn/arkVWf；日语入门 http://t.cn/aCsJt6；阿语入门 http://t.cn/adoS0T
+
+
+<!--more-->
+
+
+6、【视频剪辑的大神们都是怎么找背景音乐的？】资源全部免费的配乐资源网站http://t.cn/h4NIOx，对同一首配乐提供不同时长的版本，如10s、15s、30s、60s以及原始长度的版本，绝对可以省去你重新剪辑配乐的辛苦！同时，可以根据关键词进行搜索，如epic、happy，也可以根据风格、时长、乐器等进行搜索
+7、推荐一个下载电脑软件的神站，除了可以下载到一些常规的软件，它上面还有按照院系分好类的各种专业软件，各个专业需要的软件上面都可以下载到，最最最最重要的是没有各种乱七八糟的广告，网址http://t.cn/z8G4PeL
+8、3ds Max教程集：http://t.cn/RvF2eyo；Maya教程集：http://t.cn/h47VN0；AE教程集：http://t.cn/GVOTg；Photoshop：http://t.cn/RvvTViu；Dreamweaver：http://t.cn/h47f91；Flash教程集：http://t.cn/h47JoE；Autocad教程集：http://t.cn/h47xYf；Rhino 教程集：http://t.cn/h47t5t
+【网站制作系列视频教程】HTML基础教程http://t.cn/RPzfvBD；Dreamweaver cs6教程http://t.cn/RPzfvBs；div/css布局http://t.cn/8swq0oy； JSP教程http://t.cn/RPzfvrA；ASP教程http://t.cn/RPzfvBk；ASP.NET教程http://t.cn/8sxyEVf；PHP教程http://t.cn/RPzfvrw；全部http://t.cn/RPzfvBF
+【最全的视频教程】3DsMAX教程http://t.cn/RPq1X3o；CorelDRAW教程http://t.cn/RPq1X30；Dreamweaver教程http://t.cn/RPq1X3K；Fireworks教程http://t.cn/RPq1X3l；Flash教程http://t.cn/RPq1X3N；MAYA教程http://t.cn/RPq1X39；PS教程http://t.cn/RPq1X3C；AutoCAD教程http://t.cn/RPq1X3p
+9、如何做学术研究http://t.cn/zHyVDDL，学术论文写作技巧http://vdisk.weibo.com/s/C7blxw0JI39，英语学术论文常用句型http://vdisk.weibo.com/s/D3psb5mu_x0O
+10、推荐：这个网站包括四六级，托福，雅思GRE，GMAT等诸多课程，网址是http://t.cn/h62W6H （需要登录），或者http://t.cn/zO6yQeY （免登录），快试试吧
+11、【看电影的好去处】国外：很新很全的种子站http://t.cn/zQhFoEb，国外纪录片分享交流平台 http://t.cn/hlWYH；国内：simpleCD http://t.cn/zWlQHuv，乐搜http://t.cn/zHWkcvw， 电影FM http://t.cn/zjLV8Il 都是很好的选择；另外，BT天堂也不错http://t.cn/zOaKXgX
+【强烈推荐：90%的人都不知道的电影资源下载站】泡饭影视http://t.cn/hbuouj；电影蜜蜂http://t.cn/zTykDIO；今晚看啥http://t.cn/zjYpiqb；1080P全高清频道http://t.cn/zWOd7EN；电影天堂http://t.cn/hpgyK；佳片汇http://t.cn/zOE98Q1；ED2000http://t.cn/hiVAw
+（部分已经进不去了）
+12、目前找到的最为完整最为系统的PS教程，内容非常丰富。http://t.cn/zWxFeBh
+13、 【PaperRater论文检测系统】全新论文检测系统PaperRater，堪比知网，胜过paperpass。PaperRater比对数据库和知网 数据库最为接近，检测报告非常详细，对照检测报告修改论文非常方便，通常修改到10%以下，通过学校的知网检测是没问题的。PaperRater论文检测 网址http://t.cn/RvLSicS
+14、这才是真正的考研必备网站http://t.cn/z8l0fCh，涵盖了各大院校各个专业的资料供大家下载。
+15、【一个神级翻译网址】来自中国知网的翻译助手http://t.cn/hfZ0V，很多同学应该都还在用百度翻译、有道翻译等，然后对翻译出来的结果哭笑不得……CNKI翻译助手这个例句都是学术上的例子，并且可以查询在一个词在不同学科上的翻译，还有学术翻译必备词汇查询。可谓是论文必备的完美工具！
+16、【比google和百度牛N倍的搜索类网站】只会用百度搜东西？谷歌总出问题，用不了？！那么，你知道吗？有这么几个搜索类网站，虽然没有Google、百度出名，但却是垂直搜索中的佼佼者，这些搜索类网站更贴合你的实际生活需要。什么？不信？那走着瞧，嘎嘎~http://t.cn/z8Vr2E7
+17、国内外十大图片网站
+18、 想学好英语必去的70个外语网站。http://t.cn/R7hYbVf
+19、Bucee杂志馆http://t.cn/hQxC7，为数不多的电子杂志中文网站，上面虽然关于国外杂志的资源不是很多，但是中文杂志的资源涵盖还是很广阔的。
+20、5分钟搞定250篇参考文献，送给即将准备毕业论文的同学！
+21、天天网盘搜索工具http://t.cn/R7S1WYZ，号称可以快速搜索国内外各大网盘的电影、视频、文档、游戏等资源；除此之外，还有个不用翻墙带翻译的googlehttp://t.cn/RPsEYya，觉得有用的话，存下吧。
+22、 ManyBookshttp://t.cn/heT1k是一个专门提供免费电子书下载的网站，它所提供的免费电子书超过2万本。你可以通过分类、作者、书 名和语言进行检索，每本书都包含一个简介，包括书名、作者、国家和内容简介。所有电子书都可以下载保存为几十种电子书格式，比如Doc、PDF、 RTF、JAR、TXT等等。
+23、【很牛的一个古籍书照片版下载网站】书格http://t.cn/zHLtoMA是一个自由开放的在线古籍图书馆，致力于开放式分享、介绍、推荐有价值的古籍善本。一般情况下发布的文件为PDF格式（高清彩色）格式，网站现有大量的书籍供大家下载，都是免费的，快去下载吧。
+24、IMSLP http://t.cn/a0r8oo，该网站收集公共版权或者版权过期的乐谱PDF，大多数古典音乐乐谱都能找到。足足有近26万份乐谱PDF免费下载，其中很多甚至有作曲家手稿和演奏演示音频。
+25、33个最值得读的世界级社科博客榜单
+26、【14个可免费搜索/下载PDF电子图书（文档）的搜索引擎】我们常常需要寻找一些电子书PDF文件，特别是一些国外的英文版电子书，因为很难在国内买得到，所以一些好的网站是非常值得收藏的。以下这14个都是免费的PDF网站，需要寻找国外资料的朋友看看吧。http://t.cn/RPQgCw7
+27、AB报http://t.cn/hfF2N是中国领先的原版数字报阅读赏析网站，各种报纸免费读——国内报纸应有尽有，可以让媒体从业者及普通读报爱好者在互联网上方便、安全、快捷、逼真地阅读赏析全国各地各类报纸。
+28、书喇叭http://t.cn/Rvs2OLI有创意、专业的有声书网站，最全面的英语有声读物。精选了经典有声书，而这些英语经典都是有经过专业的人朗读，他们不乏来自英美国家的演员，播音员等。让你在抑扬顿挫中享受经典，享受英语。
+29、 Tineyehttp://t.cn/hfHZd是典型的以图找图搜索引擎，上传本地的图片或者输入图片地址，即可自动帮你搜索相似图片，无需注册，无需 登录，提交图片即可搜索，支持jpg、png、gif、jpeg等格式。为了更加方便图片搜索，网站还提供Firefox、Chrome、Safari及 IE插件。
+30、【哲学论文快速搜索数据库】Phil paperhttp://t.cn/RP9dUHT是哲学家 David Chalmers 等人联袂推出的哲学文献大全，旨在帮助哲学研究者迅速定位各个问题域的所有文献。每个问题域都有专门聘请的编辑、顾问进行整理，因此它也可以帮助我们了解 哲学在当代美国是如何被分类的，各个问题域是如何被系联的。
+31、【10个LOGO资源站】还在为设计LOGO犯愁？想要提高Logo设 计技巧？来看看这10个LOGO资源站吧，你会找到很多灵感和借鉴之处。网络中资源无穷无尽，但有时候”乱花渐欲迷人眼”，太多了反而不好选择，希望这里 挑选出的顶级Logo设计资源网站会对你有所帮助。http://t.cn/8kFLvus
+32、 【设计师必备的40个资源网站】最让设计师头疼的事情莫过于没有灵感及没有好的资源，设计师需要PSD文件、需要PS笔刷、纹理高清背景图、矢量图等大量 资源！特别给大家推荐40个资源网站，你可以从这些网站里快速简便的获得您需要的文件、设计样式等，大大提高工作效率。http://t.cn/zj3qtGA
+33、 【信息资料搜集技巧及渠道大总结】资料搜集是个相当繁琐与累的工作，掌握相应的搜索技巧和渠道是极其重要的。同样是使用搜索引擎，不同人搜出的结果可能天 差地别。那么哪些技巧可以提高大家的搜索效率与精准度呢？在此与大家分享笔者积累的资料搜集技巧和渠道，供大家参考、学习。http://t.cn/z8lNZKP
+34、【四款字体查询神器】有很多朋友看到一些设计作品时，经常问“这是什么字体”，急求字体名称等等。现给大家奉上四款字体查询神器，识别率嘛，一般般，但聊胜于无，尤其是遇到冷门字体。http://t.cn/RvuSTw3
+35、 【10个无版权限制的大图特供网站】尽管国内有很多素材下载站，但是大部分都没有版权描述，这样会让用户不知道是否可以免费使用这些素材。没关系，今天给 大家推荐10个优秀的素材资源网站，这些网站的图片质量相当高，大部分为高分辨率。最重要的是，它们是免费的，无版权限制！http://t.cn/RPPzRIe
+36、【20个下载免费矢量素材的最佳网站】矢量图的优点相信不需要老跟班解释了吧，可用作平设、图标制作、印刷设计等等，而且无论你怎么放大，质量都是杠杠的！今天老跟班为大家带来20个免费矢量图下载网站，满满的20个！分类齐全，应有尽有哟！http://t.cn/zQwOebv
+37、值得收藏的22个搜索下载免费PDF电子书的网站
+38、网上的搜索引擎服务不少，却不知道哪一个最好用。而turboscout http://t.cn/zjzR6uo网站集成了70多个搜索引擎的搜索服务，无论是网页，图片，还是博客，音频、视频都可以一网打尽!
+39、【教你一招：如何搜索网盘里面的好书】还在求分享网盘里面的好书？教你一招，打开网盘搜索引擎：爱挖盘http://t.cn/8s86Smx 把要找的书名输进去，点击搜索，网盘里面共享的好书就出来了。最近一直在用，相当方便。
+40、【8个最佳翻译平台】译言网http://t.cn/haDDR；知网翻译助手 http://t.cn/h5fBGl ；Proz国际翻译平台http://t.cn/7fVNR；51UC英语角http://t.cn/h1dTFm；007翻译培训http://t.cn/zOznACV；译网http://t.cn/7zIvO；沪江外语http://t.cn/hrYMk；China Dailyhttp://t.cn/hJZSY
+41、最近有朋友在问，不用各大视频网站的客户端如何便捷下载视频？教大家极其简单的一个方法：下载安装硕鼠http://t.cn/hI4w2或维棠http://t.cn/hGIrPd即可，操作十分简单，支持的网站很多。还有，如果想去掉广告，可以使用保护伞http://t.cn/zRZ9hDP，极其精致，也挺好用。
+42、分享一个很强的网站，该网站收集了从文艺复兴时期开始，16万多幅世界著名画家的画，西方著名画家的作品基本收录全了，而且还是高清大图http://t.cn/zjNlAkE
+43、http://www.xnet.se/fd/这 个网站可以生成一个指定格式的损坏文件，支持的格式也挺多。比如要交word或者ppt，但是还没做出来，就可以先生成一个交上去然后说文件损坏了；2. 把任意文件用记事本打开，然后删除一段乱码，保存以后按原格式打开也就成了损坏文件了。只为了应对不测或多争取些时间，慎用。
+44、【文献综述】文献综述的写法http://t.cn/Rh6onsx；本科毕业论文如何撰写文献综述？http://t.cn/zHKQB8G；如何写文献综述？http://t.cn/zHKQB8b；克雷斯威尔五步文献综述法http://t.cn/Rh6onsa；社会科学研究中的文献综述：原则、结构和问题http://t.cn/zHKQB8q，供大家参考。
+45、【Voicetube-看影片学英语平台】Voicetube网http://t.cn/zYeyF6i是看影片学英语教学平台，它是一个台湾的视频学英语网站，完全免费；Youtube网站有上万部拥有英文字幕的硬盘，该平台选择最佳的免费学英语资源，通过截取字幕和试听来创作学习英语的环境，帮助你快速提高英语水平。
+46、 【7款靠谱工具帮你选取完美配色】Kulerhttp://t.cn/zlAJ019；PHOTOCOPAhttp://t.cn /zjLHT70；Pictaculoushttp://t.cn/5v56l；Color Palette FXhttp://t.cn/RPc5Y0S；Image Palettehttp://t.cn/RhbpgCB；Color Palette Generatorhttp://t.cn/brxM9；ColorExplorehttp://t.cn/RhbpgCr
+47、给大家推荐一个可以在线WORD转PDF的网站http://t.cn/RhLpiWK，速度快，效果极佳，亲测好用。（办公软件亦可实现）
+48、推荐几个不错的照片处理类网站：1、http://t.cn/hMkeV 十分强大的在线图像处理工具。2、http://t.cn/hSOPJ 快速生成老照片，超牛！有时光倒流的错觉。3、http://t.cn/h9H4m把照片转化成字符，必须是60×50的JPG图象，非常可爱。4、http://t.cn/hmciL 用马赛克填满你的照片。
+49、秘密网http://t.cn/zQMCaqG，非常有趣的网站，帮你找一个地方写下你的秘密。很多心里有秘密的人有时候很难找到可以交心的私密好友，无法倾诉……现在好了，你可以到秘密网把你心里的秘密写出来，因为在这里没有人会认识你，他们和你一样都是想倾诉秘密的人。
+50、好书推荐排行榜http://t.cn/zjwbXhU，这是一个推荐书籍的网站，有很多行业领军人物或者著名高等学府推荐的书单。你可以根据你的兴趣和职业找到适合你的阅读书单，阅读增长见识，来这里找适合你的阅读书单，靠谱。
+51、在线换发型网http://t.cn/hEmYe，可自由设计发型，并且这个网站是国内的，太棒了！据说，该网站目前有超过300种的发型可供选择，并且还会根据你的照片进行相应的调整，还没有找到一款适合自己发型的朋友这下有福了。
+52、推荐一个非常不错的英语字典网站：Thesaurushttp://t.cn/hbqV5d，只要输入一个单词，它会自动生成蜘蛛网，列出每个单词的同义词，感觉十分好用，是个很好的词汇学习网站。
+53、 Wolfram Alphahttp://t.cn/h5k8b，是一个很牛的搜索引擎，可以直接向用户返回答案，而不是提供一系列可能含有用户所需答案的相关网页。它更 是一个超强的知识引擎，无论是科学上的一个函数、一个术语、一个分子式，还是文学上的一名作家的作品、生平，经济学上的一种理论，都能找到图文并茂的答 案。
+54、【纯英文学习网站】词典类：The free dictionaryhttp://t.cn/hHOxP Merriam-Websterhttp://t.cn/hirOI；语法类：Wordreferencehttp://t.cn/hSpPt GNU Aspellhttp://t.cn/zjfqk4q；阅读类：BBC Newshttp://t.cn/zOSwoaUEconomisthttp://t.cn/hcRNY NPRhttp://t.cn/htwLR
+55、 SketchBookhttp://t.cn/zOX84RK，由著名的设计软件开发公司Autodesk推出的一个很专业的在线绘画工具，同时支持鼠 标、手写板操作，专业级的笔刷效果可以让懂绘画的朋友玩得游刃有余，不懂绘画的朋友也无妨，网站支持图片上传并转换为素描风格，同样可以玩得很嗨皮。
+56、 【分享两个不错的简历制作工具】1.cvmkrhttp://t.cn/zll6jyx，一个免费在线生成漂亮简历的网 站；2.vizualizehttp://vizualize.me/，这是一个用来创建超炫个人简历的工具（信息图表），这样的简历一定有助于你获得一 份好工作。
+57、Free Online OCRhttp://t.cn/GhlYg，可以从PDF和图像中识别出文字，可转换成可编辑的Word、Excel和文本输出格式，测试了下，识别度挺高，并且支持多种语言。
+58、常用二十六大学术搜素引擎http://t.cn/RhBWaNn；国外免费期刊全文数据库http://t.cn/RhBWaN1；33个最值得读的世界级社科博客http://t.cn/RhBWaNr；新闻传播类专业期刊一览表http://t.cn/RhBWaNu；新闻传播学研究类网站http://t.cn/RhBWaNB；国内外新闻传播院系大全http://t.cn/RhBWaNm
+59、 【免费在线文件转换器—Convert Files】Convert Fileshttp://t.cn/h81Ad支持在线转换最大250M的文件，支持很多常见的压缩文档、文档、图片、音频、视频格式等，还可以将下载链 接发送到自己的邮箱，省去安装各种小工具，十分方便。
+60、Download Searchhttp://t.cn/zO8e1n5是一个基于谷歌自定义的搜索引擎，收录有国内外500多个网站，包括BT、电驴等P2P网站、网盘、 各方面的下载站等，并且针对每个网站写了收录规则，尽量保证搜索到的网页都是下载页，并对搜索结果进行了分类，支持谷歌所有搜索语法。当然这仅适用于上网 无限制的用户。
+61、【下载网络视频方法汇总】1.硕鼠http://t.cn/hI4w2；2.维棠http://t.cn/hGIrPd；3.飞驴http://t.cn/hkn0i；4.Clipconvertehttp://www.clipconverter.cc /，只支持国外网站；5.谷歌的审查元素，以及浏览器插件，例如FVD Video Downloader、Adkill and Media Download，使用方法请自行搜索。
+62、NewspaperBatonhttp://t.cn/RvbnTL8，读者可以从这里获得1690年以后，超过9,000种美国报纸的信息，研究者的福音！
+63、史上最完整的专利信息数据库网址大全。http://t.cn/RhH5dW0
+64、 【论文检测】很多即将毕业的同学都在为一件事情发愁，就是自已的论文能否通过抄袭检测。现在提供论文检测的机构主要来源于三大中文期刊数据库，即中国知网 论文检测系统，万方论文相似性检测系统，维普通达检测系统。 基于此，我特整理了一些比较准确的论文检测系统，供大家参考。
+65、想学好英语必去的70个外语网站。http://t.cn/R7hYbVf
+66、天天网盘搜索工具http://t.cn/R7S1WYZ，号称可以快速搜索国内外各大网盘的电影、视频、文档、游戏等资源；除此之外，还有个不用翻墙带翻译的googlehttp://t.cn/RPsEYya，觉得有用的话，存下吧。
+67、【推荐几个有意思的网站】穿帮网http://t.cn/zQrPNDh；糗事百科http://t.cn/8ke3aKH；bilibilihttp://t.cn/hbJPuO；有意思吧http://t.cn/hVdOm；看20年后自己的相貌http://t.cn/hdhcv；眼睛的幻觉http://t.cn/ht8vx；最搞笑的时光http://t.cn/h4sP5Q
+68、【插画网站大全】近2000个插画网站，感兴趣的朋友可以收藏。http://t.cn/8F1wcp4
+69、台湾中央研究院开发的汉籍电子文献索引库http://t.cn/ao1wf9，是迄今最具規模的中文古籍资料库之一，涵盖了经、史、子、集四大类，基本上常见的史料这里都能看到，生僻的也在逐年更新，重要的是这些资料可以全文检索，特别适合做专题研究。
+70、 【任意网页无失真保存为PDF】想打印网页的内容，但往往打印出来的效果不如人意，网页变形很严重。而Pdfmyurlhttp://t.cn /hoGDo能够轻易解决此问题，只需在线输入需要打印的网页地址，它就能快速的将网页无失真地转换保存为PDF，而此种格式打印出来的效果是非常棒的， 同时支持中文。
+71、【绘制交通事故示意图】网址：http://t.cn/huT39，对于像交警、新闻编辑等专业人士来说，这个网站无疑会有很大帮助。它能够协助你在线绘制一起交通意外事故的示意图。操作相当简单，提供各类交通相关的图示，上手相当容易，制作出来的效果也非常不错的，暂不支持中文。
+72、给喜欢用LR修图的朋友推荐一个国外的好网站http://t.cn/zHQS7Tq，该网站里面的LR预设都是免费的，而且绝对要比你去论坛做任务下载的那些要好。
+73、必须推荐这个网站， 我每天都在用的http://rrurl.cn/5l1Kc0，写文件写paper担心用词不当，先用这个查一下。可以搜索到1990-2012年主流媒体和文献中，单词出现过的例句：不同词性时的用法，高频搭配… 这样用词精准多了吧。
+74、 【200多个好玩的FLASH游戏】Frivhttp://t.cn/hfnWA，该主页陈列了264个FLASH游戏，每个游戏的左边都有详细的操作指 南，游戏页面设计很完美，画风很可爱，都非常容易上手，无聊的时候上来玩一玩，心情大好。附上@设定控 在线小游戏网站汇总http://t.cn/8FYCFvV
+75、【给大家推荐几个实用的网站】在线文字工具http://t.cn/Rv9pZlo；表情生成器http://t.cn/RvDgN5B；下厨房，吃货必备http://t.cn/hxI9q；在线换发型网http://t.cn/hEmYe；在线图像处理工具http://t.cn/hMkeV；全球酷站中心http://t.cn/R7WH1Fe
+76、【电子杂志下载网站 】VeryCDhttp://t.cn/hn7mG，提供国内外中英文杂志、报纸下载，定期更新；Bucee杂志馆http://t.cn/hc2Zz，提供最新简体及繁体中文杂志下载；QMAG免费电子杂志http://t.cn/h4krx1，提供最新香港、台湾中文电子杂志下载；ZCOM电子杂志http://t.cn/hcHBe，内容丰富。
+77、【古籍类网站】汉典古籍http://t.cn/Gt1aM；中国古籍全录http://t.cn/hMuyy；汉川草庐http://t.cn/hHM9G；中国哲学书电子化计划http://t.cn/h9nFB8；古籍善本网http://t.cn/zO5uVMj；汉籍电子文献索引库http://t.cn/ao1wf9；另外@陆浑戎 @万事风过耳 等老师也推荐过很多
+78、Literature Posthttp://t.cn/R7Yr1YW，825部收藏，包括经典书籍，戏剧，故事和诗歌，可在线阅读。
+79、Online Dictionaryhttp://t.cn/R7Yd5dR，十四种语言的词典，包括英语，中文，法语，德语，希腊语，希伯来文，意大利语，日语，拉丁语，波兰语，俄语，西班牙语，土耳其语，越南语。
+80、【推荐】最好的免费电子图书馆指南（上）http://t.cn/zYcbH8t；最好的免费电子图书馆指南（下）http://t.cn/z84nsDZ
+81、 OYEZhttp://t.cn/h44yVa，业余美国法律和历史爱好者可以看看这个网站，该网站最有价值的部分是美国最高法院的案例索引，虽然不是所 有案例都收集完备，但近年相当一部分案子都有庭审答辩的录音和判词，再配合Google学术搜索，几乎可以搜到任何一个案例的公开记录，整个网站的数据也 是免费公开的。
+82、【关于天文、天体、宇宙知识的网站】中国天文数据中心http://t.cn/R78H83A；牧夫天文论坛http://t.cn/Sy5wEP；科学松鼠会（天文）http://t.cn/zTyE8Tq；NASAhttp://t.cn/hf0pY；Ian Ridpathhttp://t.cn/R78H83Z； Caltech Astronomyhttp://t.cn/R78H83w； Sky&Telescope http://t.cn/hBmoLf
+83、【怎样快速搜索自己所需的资料？】大部分人可能在搜索资料时，会把自己所需要搜索的资料输入Google、百度等搜索引擎的搜索框，此方法是可行的，但搜索出来的许多资料并不是我们所需要的，如果学会使用下面的一些方法会大大节省我们的时间。http://weibo.com/5198011111/BvtmVjSkV?from=page_1005055198011111_profile&wvr=6&mod=weibotime
+84、【医学类网站】在线医学词典http://t.cn/R7DwQWO， 可搜索标准的医学术语；Allrefer Healthhttp://t.cn/Rv3Zbc5，超过1500主题的在线医学百科全书；NCBIhttp://t.cn/htPu88，收藏生物医 学书籍的网站；freebooks 4 doctorshttp://t.cn/SIu6SX，医生的免费电子书。
+85、【推荐几个图标 搜索引擎】Icon Search Enginehttp://t.cn/R7sBYSz，可下载百万免费图标；Easy Iconhttp://t.cn/zYkDMTw，收录了超过40万个精美PNG、ICO、YCNS图标；Icon Finderhttp://t.cn/zQuuGlW，免费图标搜索引擎。除此之外，可参考@设定控 的图标素材网站汇总http://t.cn/RPPveMa
+86、大四的同学，假期回家写论文，要找资料怎么办？据说只要注册中国图书馆http://t.cn/8ksbT61，里面有各种期刊和学位论文包括外文，只要你有身份证号，都是免费的
+87、 【推荐】PDF my urlhttp://t.cn/hoGDo，任意网页无失真保存为pdf；Free Online OCRhttp://t.cn/GhlYg可以从PDF和图像中识别出文字，转换成可编辑文本格式；Convert Fileshttp://t.cn/h81Ad，免费在线文件转换器。
+88、【Word画线技巧】1、输入三个“=”回车，就是一条双直 线；2、输入三个“~”，回车，就是一条波浪线；3、输入三个“*”回车，就是一条虚线；4、输入三个“-”，回车，就是一条细直线；5、输入三个 “#”，回车，就是一条隔行线；6、输入三个 “_”，回车，就是一条粗直线。
+89、【推荐几个站点】1.THE PIRATE BAYhttp://t.cn/zWPrsTS；2.EXTRA TORRENThttp://t.cn/8kPscC1；3.EZTVhttp://t.cn/adeItJ；4.ISOHUNThttp: //isohunt.to/；5.BITSNOOPhttp://bitsnoop.com/；6.RARBGhttp://t.cn/hi5T0，喜欢 美剧的，可以存下！
+90、给传媒学子推荐一个专业的传媒行业招聘平台：@鲸猎头 http://t.cn/RhKisE7，每天会更新大量的招聘信息，且分类明确，可快速找到自己想要找的招聘信息。
+91、用SPSS做数据分析？先弄懂SPSS的基础知识吧。http://t.cn/Rz42SQ2
+92、 English Centralhttp://t.cn/hWy8W是一个练习口语发音的视频网站，你可以看着视频跟读，并且把自己的跟读都录下来。而且这个网站非常智 能，它可以告诉你，你的录音当中有哪些地方出错了，而且你可以对照标准读音不断跟读，直到掌握正确的发音。（使用方法http://t.cn/zjaAKBh）
+93、推荐三个英语作文批改网站：句酷批改网http://t.cn/aooeIY；新东方批改网http://t.cn/qG8zB；极智批改网http://t.cn/zTKE6Tl，欢迎补充同类网站。
+94、推荐一个比知网还要好用的学术搜索工具：读秀http://t.cn/hCSj2，随便拿出书里的一句话，应该都能搜到，特别好用，特别是做文献综述和学术史回顾的时候。。。还可以下载电子书的pdf版，精确到每一页哦~（网友推荐）
+95、【小语种学习网站】综合类：小语种入门http://t.cn/agpyql，小语种学习网http://t.cn/zRJub87，italkihttp://t.cn/hxq5w；法语http://t.cn/hbU7G9，日语http://t.cn/h9Wlnu，西班牙语http://t.cn/7I4Ck，德语http://t.cn/h18J5c，韩语http://t.cn/7PcbY，以上内容供参考，欢迎补充。
+96、【搜网盘资源，用这些就够了】天天网盘http://t.cn/R7S1WYZ；爱挖盘http://t.cn/8sBlB3r；吸盘http://t.cn/8FT6JDr；盘搜http://t.cn/hOpn5；盘找找http://t.cn/RzlST5h；我的盘http://t.cn/agNUX5；壹搜http://t.cn/zTUWLrQ；网盘搜http://t.cn/8FJ34WR；360搜网盘http://t.cn/zld317n
+97、世界上有这么一些地方，全是书！一字字地录成电子版，然后一群人用它们建起了网站。当你在瀚堂、四库、古籍库等地方搜不到的时候，就来这里吧：苍梧书坊http://t.cn/RzpiVyR 东里书斋http://t.cn/RzpiVyu 钱氏藏书http://t.cn/RzpiVym 书林网http://t.cn/zOHCyRt 大熊图书馆http://t.cn/RzpiVy3
+98、分享六个地址：http://t.cn/RzxCoQ4，http://t.cn/zTSkbRZ，http://t.cn/Rh14kbS；http://t.cn/RzJPXZY，http://t.cn/zOeG52U，http://t.cn/Rz5u5yr，相信你点进去后，会回来转发的。
+99、【中小学优质课视频观看网站】凤凰学习网http://t.cn/RzcbABq；一点通教学网http://t.cn/Rz0bGAP；教师网http://t.cn/RzY75Pg；99教师网http://t.cn/R7um0yk，以上四个网站内容丰富，免费观看，更新也比较快。
+100、 【帮程序员减压放松的良心网站】Calmhttp://t.cn/Sx7CQd；Do Nothing For 2 Minuteshttp://t.cn/hGE7kc；Get Relaxedhttp://t.cn/hbFCvT；LoungeV Studiohttp://t.cn/RPcPgv6；A Soft Murmurhttp://t.cn/8k3eijv；Nature Sounds For Mehttp://t.cn/bQAQc；全部http://t.cn/Rhy6Ijt
+101、 【推荐】1、如何利用读秀搜索人民日报数据库？2、网页版人民日报，1946-2003http://t.cn/Rz3YM6P；3、 NewspaperBatonhttp://t.cn/RvbnTL8，读者可以从这里获得1690年以后，超过9,000种美国报纸的信息；4、神户大 学附属图书馆报纸数据库http://rrurl.cn/dDRCt6 ，收藏了1911年之后日本的各类主要报纸。
+102、【电影资源下载网站】电影天堂http://t.cn/hpgyK；蓝影网http://t.cn/RPf50eB；电影小二网http://t.cn/RPN1g89；小浣熊http://t.cn/zj2Lp9S；飘花电影网http://t.cn/heinbP；BT天堂http://t.cn/zOaKXgX；乐搜http://t.cn/zHWkcvw；搬运工http://t.cn/zW5iqic；嘎嘎影视http://t.cn/RvfQBPZ
+103、给学法的朋友推荐几个有用的网址：全国人大的中国法律法规检索系统http://t.cn/h1kd7c，可以查询各级法律法规，个人觉得搜索功能比有些数据库好，适合在家写论文用；全国人大的法律释义http://t.cn/hrXIWy；全国人大的英文法规数据库http://t.cn/aokcQw，部分法律法规未进行翻译的更新。
+104、 【推荐一个非常棒的资源站客户端】FBT是北大研究生自主开发的资源下载站，面向所有高校大学生，提供了包括最新的电影、音乐、软件、各种教程等资源，同 时也有方便的高清网络电视服务。最重要的是，这个客户端的传输是基于IPV6的，不仅传输速度快，而且不占用IPV4流量配额！http://t.cn/Rzear6N
+105、 【推荐4个免费在线提供OCR文字识别服务的网站】Ocrkinghttp://t.cn/aBJZ5w，Free Online OCRhttp://t.cn/GhlYg，Free-OCRhttp://t.cn/b816t，NewOCRhttp://t.cn/GtK7V，以 上四个网站可以在线将PDF及图片中的内容识别出来，生成一个可编辑的文档，并支持多种文件格式输入及输出，还支持多语种识别。
+二、传媒类（公开课、考研等）
+1、全国20所重点院校新闻传播类考研参考书目汇总（供参考）
+2、新闻传播学考研的108条忠告（@新闻传播学研）
+3、中国传媒大学公开课：理解人类传播
+华中科技大学公开课：传播的历程
+麻省理工学院公开课：媒体、教育、市场
+4、播音与主持艺术，新闻学，记者必备书目与网站http://t.cn/zTTWxcf
+5、新闻学、传播学、广告学书单http://t.cn/zj9YZ8p
+6、哥伦比亚大学新闻学院推荐50部与传媒相关影片http://t.cn/a1IRrv
+7、世界三大新闻社采编手册http://t.cn/RvmjyOx
+8、北京电影学院学生必看电影及参考书http://t.cn/RveWvR5
+9、考研院校专业数据库：http://t.cn/z0FBIGc ，可以查询专业基础信息、近几年报录比、报考要求、奖学金、学科研究方向、初试参考书目、复式参考书目、专业复试要求比重。
+10、【新媒体采编人员提高效率的10种工具】工欲善其事必先利其器，这些工具有助于提升新媒体采编人员的工作效率。大概涉及任务管理和团队协作，系统思考，效率工具，有助于不断学习、收藏新的知识技能等。http://t.cn/RvuqQ1z
+11、新闻传播学考研十大常考专题必读论文索引。http://t.cn/RPL5iBQ
+12、【考研英语写作必备模板】1、图表作文写作指南及经典必背模版http://t.cn/8skl1bt2、书信类小作文模板汇总（借鉴2014）http://t.cn/8sFpSMH 3、必备《写作160篇》之写作模板（经典完整版）http://t.cn/Rvc4ZKX 书信+图表，需要的都在这里了，考研英语必备模板，必须收藏！
+13、【新闻类网站风格设计原则】尽管这篇文章针对的是新闻类的网站风格设计，但文中提到的12点原则，适用于每一个博客和个站，对想要做大网站的设计师站长来说，尤其实用。对新手设计师而言，这些设计原则更是必须掌握的。http://t.cn/RPcohml
+14、MATLAB数据挖掘公开课
+15、哈佛大学公开课：新媒体时代的保密与新闻业
+16、【网络编辑】1.凭什么做网络编辑？http://t.cn/8s95lvd 2.网编应具备的基本素质http://t.cn/zRcltJ7 3.网编如何做好“网络搬运工”http://t.cn/RhtsejD 4.网编应该熟知的7个基本SEO技巧http://t.cn/Rhtsejs 5.编辑的智商与情商应当统一http://t.cn/8sxIOMa 6.新闻采编手册汇总http://t.cn/RhtsejF
+17、世界主要新闻媒体网站http://t.cn/Rh5m83d
+常用的十八大学术搜索引擎http://t.cn/zHiy3MH
+非常齐全的各类视频教程http://t.cn/8sNEF4d
+新闻传播学各大院校考研资料索引http://t.cn/8FNhBbu
+常用招聘网址大全http://t.cn/8s5LkWo
+18、 【各国媒体网站推荐】俄罗斯：1.RIA Novostihttp://t.cn/zO4i0hw 2.NTVhttp://t.cn/SiN6fS3.1TVhttp://t.cn/hm03G；朝鲜：1.New Focus Internationalhttp://t.cn/RhFiKo62.Naenara http://t.cn/hrEsvm；美国：1.CNNhttp://www.cnn.com/2.http://www.voanews.com 3.TIMEhttp://t.cn/hYWJ7
+三、分类资源网站
+有声读物网站
+天方听书
+静雅思听
+博客思听
+mmmppp333
+畅想听吧
+书喇叭
+爱听网
+酷听网
+家常读书
+旧书交易类网站
+孔夫子旧书网
+布衣书局
+有路网
+中国旧书网
+天下旧书网
+中国收藏热线
+免费音效资源类网站
+闪吧音效库
+中国素材网音效库
+日本的音效库
+站长素材-音效
+Soundsnap
+Freeplay Music
+Ilovewavs
+Breakout
+电影资源下载网站
+泡饭影视
+电影蜜蜂
+今晚看啥
+1080P全高清频道
+电影天堂
+佳片汇
+ED2000
+蓝影网
+电影小二网
+乐搜
+天外来客
+影视后期教程类网站
+火星教育
+我要自学网
+翼虎网
+飞特网
+直线网
+Videocopilot
+Vfxinfo
+BW Design
+免费视频素材/模板下载网站
+视崛
+92素材网
+新GG儿
+千图网
+39视频
+模板天空
+人人素材社区
+免费下载3D模型的网站
+3D models
+3Dfrom
+3Dtotal
+3Dm3
+Wirecase
+Archibase
+3Delicious
+Photoshop教程网站
+我要自学网
+大师之路
+52photoshop
+PSDFAN
+Photoshop Tutorials
+PS Brushes
+ps联盟
+专业影评类网站
+时光网
+豆瓣电影
+烂番茄
+IMBD
+美国广播影评人协会
+纽约影评家协会
+Film
+GoodFil.ms
+Cinephilia
+ScreenJunkies
+IndieWire
+歌谱简谱搜索下载网站
+搜谱网http://t.cn/ho67h
+找歌谱网http://t.cn/SLz5xZ
+曲谱网http://t.cn/zOXleJG
+一叶文字http://t.cn/aCQvRK
+好曲谱http://t.cn/zW5cHVZ
+e网音乐http://t.cn/hBscJs
+谱天下http://t.cn/7fJv7
+大众乐谱http://t.cn/hbsUK2
+IMSLPhttp://t.cn/a0r8oo
+四、其他
+1、关于开题报告、论文写作、论文排版、论文检测、毕业答辩等各类关于毕业论文的文章集锦，超全整理，你想要的，想找的，都在这里！请戳http://t.cn/R7VAziq
+2、【大一到大四期间可能会用到的128万份资料】这是来自全中国几百所高校的同学们所精心收集的近万份资料，几乎涵盖整个大学所有能用到的资料，包括课后答案、课件PPT、学习笔记、期末考试突击复习材料、论文资料、课程辅导、考研辅导、各类大学生需要的考证资料等http://t.cn/zHWoXLL
+3、 【英语口音纠正全套教程】这个太赞了，学好英文必须收藏！华纳兄弟的Andy Krieger先生毕业于斯坦福，曾为许多外国演员纠正带口音的英文，并通过自己的经验总结出了这一套发音纠正教程，看过之后你就会发现自己在发音上的一 些小瑕疵。值得一看，大家都来练练吧！http://www.tudou.com/programs/view/S9cfVXLvThM/?bid=03&pid=02&resourceId=100311153_03_05_02，更多http://weibo.com/5198011111/BqWD43NeS?from=page_1005055198011111_profile&wvr=6&mod=weibotime
+4、PS常用技巧http://t.cn/zj3Gsk6；20种平面设计理论http://t.cn/zH1ip8h；怎样在PS中保持像素的完美http://t.cn/zHsYpOM ；25个完美的PS教程http://t.cn/8sgEXpP；那些你不知道的Photoshop冷知识http://t.cn/zHeGNla；15个很酷的PS小技巧http://t.cn/zYSRWM0
+5、【传奇般的PPT不是靠一个软件实现的，九大PPT制作伴侣！】做幻灯片不是PowerPoint一个软件的活，适当利用一些合适的工具，让你事半功倍。下面是9个跟幻灯片有关的资源，有的是网站，有的是软件，有的是书籍，相信能给你带来一些启发。http://t.cn/zQuS9rI
+6、三大牛人看外国文献的方法http://t.cn/8DDeW3i，强烈推荐！
+7、【谷歌】地址一http://t.cn/RPWcZX3 地址二http://t.cn/RvHUsTO 地址三http://t.cn/Rhq2png 地址四http://t.cn/RPALnMk 地址五http://t.cn/z89TWnU 地址六http://t.cn/RvECost 地址七http://t.cn/RhVoFwQ 地址八http://t.cn/RhUnIs6（个别搜索功能不全）
+8、【计算机1-4级各类型考试备考精华】计算机一级复习资料汇总：http://t.cn/SIqJ9R ；计算机二级复习资料汇总：http://t.cn/z0D6LuV ；计算机三级复习资料汇总：http://t.cn/zO6Ibvu ；计算机四级复习资料汇总：http://t.cn/zOMg5QD
