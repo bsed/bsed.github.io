@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: tYgA博客镜像
+title: tYgA博客镜像(https://tygasoft.com)
 subtitle: ''
-description: ''
+description: 'tYgA博客'
 keywords:
 author: John Doe
 language: en
@@ -99,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
+theme: cafe
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
