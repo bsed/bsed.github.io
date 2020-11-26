@@ -99,8 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: icarus
-twikoo: ts-cloudbase-6g2t7lhx00d986f3
+theme: candy
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
