@@ -1,0 +1,173 @@
+---
+title: "Javascript中的变量提升"
+categories: [ "JS" ]
+tags: [ "javascript","hoisting" ]
+draft: false
+slug: "variable-in-javascript"
+date: "2013-10-27 16:48:00"
+---
+
+Javascript的变量提升
+
+先来看一段英文原文：
+
+> In JavaScript, a variable can be declared after it has been used. In
+> other words, a variable can be used before it has been declared. To
+> understand this, you have to understand the term "hoisting". Hoisting
+> is JavaScript's default behavior of moving all declarations to the top
+> of the current scope (to the top of the current script or the current
+> function).
+
+翻译过来大致意思是：在Javascript语言中，变量的声明可以放在它的使用之后。换句话说，变量可以先使用后声明。为什么会这样呢？哦，原来一切都是提升（hoisting）机制在“作怪”。提升（hoisting）是Javascript语言默认就具有的一种将**当前作用域内的所有声明都提升（hoisting）到最顶部**的行为机制。
+
+为了理解上面的含义，我们来看具体案例，此处定义一个函数 fn1：
+
+    function fn1(){
+        var a = "变量一";
+        var b = "变量二";
+        var c = "变量三";
+    }
+
+
+<!--more-->
+
+
+其实它会“摇身一变”成这样：
+
+    function fn1(){
+        var a,b,c;
+        a = "变量一";
+        b = "变量二";
+        c = "变量三";
+    }
+
+变量提升（但是）
+
+但是（注意这个但是）：变量提升 只是提升变量的声明，并不会把赋值也提升上来。
+
+我们来跳坑：
+
+    var name = "jack";
+    function fn1(){
+        console.log(name);
+    }
+    fn1();       // jack
+
+此处打印出"jack"不错，再来：
+
+    var name = "jack";
+    function fn1(){
+        console.log(name);
+        var name = "peter";
+    }
+    fn1();       // undefined
+
+此处并不会打印出“peter", 而是打印出undified 有些人会不解？ 为什么会这样呢？
+
+我们把上面的函数改写一下（内容没有变化）：
+
+    var name = "jack";
+    function fn1(){
+        var name;
+        console.log(name);
+        name = "peter";
+    }
+    fn1();       // undefined
+
+释义：代码执行函数fn1，运行到执行console语句的时候当前作用域（函数体内）只有变量name的定义，并没有赋值，所以console语句打印出来的当然是undefined了。
+
+然后，我们可以再次改写函数（内容有变化）：
+
+    var name = "jack";
+    function fn1(){
+        var name;
+        console.log(name);
+        name = "peter";
+        console.log(name);
+    }
+    fn1();       // undefined peter
+
+这个时候，执行函数fn1，运行到执行第一条console语句的时候当前作用域（函数体内）只有变量name的定义，并没有赋值，所以打印出undefined了，接着给变量name赋值，所以执行第二条console语句的时候。变量name的值为peter，所以接着会打印出"peter"来。
+
+似乎你觉得好像都理解了，那我们来进阶一下，看看另外的情况，我猜，你会...
+然后（变化来了）
+如果我们给函数里面加上return语句的话：
+
+我们再把函数改写一下（内容有变化）：
+
+    var name = "jack";
+    function fn1(){
+        name = "peter";
+        return;
+        function name(){
+            console.log(name);
+        }
+    }
+    fn1();       
+    console.log(name)   // jack
+
+上面的例子等价于：
+
+    var name = "jack";
+    function fn1(){
+        name = "peter";
+        return;
+        var name = function(){
+            console.log(name);
+        }
+    }
+    fn1();       
+    console.log(name)   // jack
+
+如果不好理解，写个佐证的例子：
+
+    var name = "jack";
+    function fn1(){
+        name = "peter";
+        // return;
+        var name = function(){
+            console.log(name);
+        };
+        console.log(name);
+    }
+    fn1();              // peter
+    console.log(name)   // jack
+
+继续改写（内容有变化）：
+
+    var name = "jack";
+    function fn1(){
+        name = "peter";
+        return;
+        console.log(name);
+    }
+    fn1();      
+    console.log(name)   // peter
+
+可以看到打印出来的居然是"peter"，这个时候是不是“百思不得其解”啊？为神马？
+
+这里其实是另外的知识点
+
+>  1. 函数内显示var声明变量 ， 作用域为当前函数体内，叫做局部变量；
+>  2. 函数内声明变量（非var方式），作用域为全局，叫做全局变量；
+
+所以可以看出，函数fn1里面的name = "peter"语句其实质是改变了外部的全局的变量name的值，所以最后打印出来的当然就是peter啦。
+
+那这个时候你会问，那为什么前面的例子怎么没有改变全局变量的值呢？是啊，为什么呢？
+
+我们来仔细看看：
+
+    var name = "jack";
+    function fn1(){
+        name = "peter";
+        return;
+        function name(){
+            console.log(name);
+        }
+    }
+    fn1();       
+    console.log(name)   // jack
+
+仔细看看：这个函数体内看似name = "peter"是改变了全部变量name的值，其实是没有的。因为后面function name(){}的变量提升（hoisting）的存在，这个时候name = "peter"已经变成了局部变量的赋值语句，因为在它之前存在提升（hoisting）的定义语句，所以全局变量name的值是没有被改变的，打印出来的当然就是jack啦。
+
+(over)

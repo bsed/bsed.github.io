@@ -1,0 +1,10 @@
+---
+title: "Rails自动加载lib中的文件"
+categories: [ "Rails" ]
+tags: [ "rails" ]
+draft: false
+slug: "35"
+date: "2014-09-05 21:00:59"
+---
+
+<p style="margin-top: 0px; margin-bottom: 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; line-height: 24px; color: rgb(68, 68, 68); font-family: Helvetica, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Rails中是不会自动加载lib中的文件的，在本地调试的时候每次改一下代码调试就要重启服务器，很烦。。</p><p style="margin-top: 0px; margin-bottom: 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; line-height: 24px; color: rgb(68, 68, 68); font-family: Helvetica, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">那么如何让程序自动加载lib中的程序呢？</p><p style="margin-top: 0px; margin-bottom: 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; line-height: 24px; color: rgb(68, 68, 68); font-family: Helvetica, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在&nbsp;config/application.rb 文件中加入：</p><p style="margin-top: 0px; margin-bottom: 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; line-height: 24px; color: rgb(68, 68, 68); font-family: Helvetica, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><code style="margin: 0px; padding: 0px; border: 0px; font-size: 0.857142857rem; vertical-align: baseline; font-family: Consolas, Monaco, &#39;Lucida Console&#39;, monospace; line-height: 2;">config.eager_load_paths += [&quot;#{Rails.root}/lib&quot;]</code></p><p style="margin-top: 0px; margin-bottom: 1.714285714rem; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; line-height: 24px; color: rgb(68, 68, 68); font-family: Helvetica, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">皆可啦。</p><p><br/></p>
